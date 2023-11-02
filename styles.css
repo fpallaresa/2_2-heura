@@ -1,0 +1,101 @@
+/* Typography */
+
+@font-face {
+	font-family: 'Heura';
+	src: url('./assets/fonts/Heura.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Global styles */
+
+body {
+    font-family:'Heura';
+    margin:0;
+}
+
+ul {
+    margin:0;
+    padding:0;
+}
+
+/* header */
+
+.header-container {
+    background-color:#f9e021;
+    padding: 60px 80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.logo {
+    width: 100px;
+}
+
+/* menu */
+
+.menu-mobile {
+    background-color:white;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span.fa-solid  {
+    color:black;
+    font-size: 23px;
+}
+
+span.fa-solid:hover {
+    font-size: 29px;
+    transition: font-size 0.3s ease-out 0s;
+}
+
+.menu-desktop {
+    display:none;
+}
+
+@media screen and (min-width:1024px) {
+
+    .menu-desktop {
+        display: block;
+        width: 640px;
+    }
+    
+    .menu-desktop ul {
+        display:flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    .menu-desktop li {
+        list-style: none;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding-bottom:2px;
+    }
+    
+    .menu-desktop li a {
+        text-decoration:none;
+        color:black;
+        font-size:22px;
+    }
+
+    .menu-desktop li a:hover {
+        border-bottom-style:solid;
+        border-bottom-color: white;
+        color:white;
+        transition: color 0.3s ease-out 0s;
+    }   
+    
+    .menu-mobile {
+        display:none;
+    }
+}
+    
